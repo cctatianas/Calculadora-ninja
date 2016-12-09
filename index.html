@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora ninja</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Calculadora ninja</h2>
+        <div id="custom-search-input">
+          <div class="input-group col-md-12">
+            <input type="text" id="num1" class="form-control input-lg" placeholder="Escribe el primer número..." />
+          </div>
+        </div>
+        <div id="custom-search-input">
+          <div class="input-group col-md-12">
+            <input type="text" id="num2" class="form-control input-lg" placeholder="Escribe el segundo número..." />
+          </div>
+        </div>
+       </div>
+     </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Calcula!</h2>
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-lg" type="button" onClick="suma(parseInt(document.getElementById('num1').value),parseInt(document.getElementById('num2').value))">
+          Sumar
+          </button>
+        </span>
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-lg" type="button" onClick="resta(parseInt(document.getElementById('num1').value),parseInt(document.getElementById('num2').value))">
+          Restar
+          </button>
+        </span>
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-lg" type="button" onClick="divide(parseInt(document.getElementById('num1').value),parseInt(document.getElementById('num2').value))">
+          Dividir
+          </button>
+        </span>
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-lg" type="button" onClick="multiplica(parseInt(document.getElementById('num1').value),parseInt(document.getElementById('num2').value))">
+          Multiplicar
+          </button>
+        </span>
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-lg" type="button" onClick="concatena(document.getElementById('num1').value,document.getElementById('num2').value)">
+          Concatenar
+          </button>
+        </span>
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-lg" type="button" onClick="par(parseInt(document.getElementById('num1').value),parseInt(document.getElementById('num2').value))">
+          ¿Es par?
+          </button>
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="custom-search-input">
+          <h3>Resutado</h3>
+          <div id="resultado">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
